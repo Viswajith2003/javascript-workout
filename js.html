@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h1 id="word">Hello</h1>
+    <h1 class="word">Hello</h1>
+    <h1 class="word">Hello</h1>
+    <script>
+        document.getElementById("word").innerHTML = "World";
+        document.getElementsByClassName("word")[0].innerHTML = "Viswa";
+        document.getElementsByTagName("h1")[0].innerHTML = "header"
+
+        document.getElementById('word').style.color = "red"
+        document.getElementById('word').style.fontSize = "80px"
+
+        var test = document.getElementById("word");
+        test.innerHTML = "Hello world"
+        test.style.color = "blue"
+        test.fontSize = "50px"
+
+        var a, b, c;
+        a = 10;
+        b = 20;
+        c = a + b;
+        console.log(c);
+
+        function check() {
+            var s;
+            console.log(s);
+
+        }
+
+    </script>
+</body>
+
+</html>
