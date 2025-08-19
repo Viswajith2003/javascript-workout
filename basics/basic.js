@@ -2,9 +2,9 @@
 // console.log(a === b);
 
 // Terinary operators
-let x=5;
-let y=x>=4 ? true: false;
-console.log(y);
+// let x=5;
+// let y=x>=4 ? true: false;
+// console.log(y);
 
 // this keyword working
 // function printMarkList() {
@@ -55,19 +55,19 @@ console.log(y);
 // words.pop()
 // words.unshift('jithu')   add to begining
 // words.shift()  remove first item
-// words.splice(1,1,"viswajith")
-// words.slice(1,3)
+// words.splice(0,2,"viswa")    //[ 'viswa', 'fae' ]
 // console.log(words)
-
+// let s=words.slice(2)  
+// console.log(s);
 
 
 //Array iterations
-// let words=["abc","cgs","fae"];
-// let number=[1,2,3];
-//forEach()
-// words.forEach((item,index)=>{
-//     console.log(`${index+1}. ${item}`);
-// });
+let words=["abc","cgs","fae"];
+let number=[1,2,3];
+forEach()
+words.forEach((item,index)=>{
+    console.log(`${index+1}. ${item}`);
+});
 
 //map()
 // words.map((item,index)=>{
