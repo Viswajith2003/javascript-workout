@@ -125,18 +125,53 @@
 // mutlbyTwo(5);
 
 // with memoization
-let cache = [];
+// let cache = [];
 
-function multiByTwo(num) {
-  if (num in cache) {
-    console.log(cache[num]);
-  } else {
-    console.log("starting ");
-    cache[num] = 2 * num;
-    console.log(cache[num]);
-  }
+// function multiByTwo(num) {
+//   if (num in cache) {
+//     console.log(cache[num]);
+//   } else {
+//     console.log("starting ");
+//     cache[num] = 2 * num;
+//     console.log(cache[num]);
+//   }
+// }
+
+// multiByTwo(8);
+// multiByTwo(8);
+// multiByTwo(16);
+
+//promise example
+// const fetchData = new Promise((resolve, reject) => {
+//   let success = true;
+//   let user={name:"Viswa",age:22}
+
+//   if (success) {
+//     resolve(user);
+//   } else {
+//     reject("Error fetching data");
+//   }
+// });
+
+// fetchData
+//   .then((res) => {
+//     console.log(res);
+//   })
+//   .catch((err) => {
+//     console.error(err);
+//   });
+
+
+//example of callback function
+function greet(name,callback) {
+  console.log(`hello, ${name}`);
+  callback();
 }
 
-multiByTwo(8);
-multiByTwo(8);
-multiByTwo(16);
+function sayHello() {
+  console.log("You're successfully passed");
+}
+
+greet("viswajith",sayHello);
+
+
