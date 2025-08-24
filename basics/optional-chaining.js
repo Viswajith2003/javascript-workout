@@ -3,5 +3,4 @@ let Person={
         name:"viswa"
     }
 }
-
 console.log(Person.profile?.email);
